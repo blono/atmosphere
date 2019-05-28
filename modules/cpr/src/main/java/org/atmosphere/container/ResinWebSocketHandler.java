@@ -1,10 +1,11 @@
-package jp.co.intra_mart.system.atmosphere.container;
+package org.atmosphere.container;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Reader;
 import java.util.concurrent.atomic.AtomicBoolean;
 
+import org.atmosphere.container.version.ResinWebSocket;
 import org.atmosphere.cpr.AtmosphereFramework;
 import org.atmosphere.cpr.AtmosphereRequest;
 import org.atmosphere.cpr.AtmosphereResponseImpl;
@@ -15,8 +16,6 @@ import org.slf4j.LoggerFactory;
 
 import com.caucho.websocket.WebSocketContext;
 import com.caucho.websocket.WebSocketListener;
-
-import jp.co.intra_mart.system.atmosphere.container.version.ResinWebSocket;
 
 public class ResinWebSocketHandler implements WebSocketListener {
     private static final Logger logger = LoggerFactory.getLogger(ResinWebSocketHandler.class);
